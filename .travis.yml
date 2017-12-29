@@ -7,5 +7,5 @@ install:
   - sudo apt-get install lyx
 
 script:
-  - lyx --export tex travis_lyx_to_tex.lyx
+  - lyx --export pdflatex travis_lyx_to_tex.lyx
   - if [ ! -e travis_lyx_to_tex.tex ]; then exit 1; fi
